@@ -2,8 +2,6 @@ package com.example.logbooklimaapplication.model;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.util.ArrayList;
-
 public class Sprint {
 
     @SerializedName("id")
@@ -62,5 +60,10 @@ public class Sprint {
 
     public void setDateEnd(String dateEnd) {
         this.dateEnd = dateEnd;
+    }
+
+    @Override
+    public String toString() {
+        return title;
     }
 }
