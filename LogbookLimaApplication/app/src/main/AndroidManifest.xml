@@ -12,8 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".SprintActivity">
+        <activity android:name=".ReviewLaporanActivity"/>
+        <activity android:name=".LaporanActivity" />
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

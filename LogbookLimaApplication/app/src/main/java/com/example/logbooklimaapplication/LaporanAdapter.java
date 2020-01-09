@@ -1,7 +1,6 @@
 package com.example.logbooklimaapplication;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,12 +13,12 @@ import com.example.logbooklimaapplication.model.Sprint;
 
 import java.util.ArrayList;
 
-public class SprintAdapter extends RecyclerView.Adapter<SprintAdapter.CategoryViewHolder> {
+public class LaporanAdapter extends RecyclerView.Adapter<LaporanAdapter.CategoryViewHolder> {
 
     private final Context context;
     private ArrayList<Sprint> listSprint;
 
-    public SprintAdapter(Context context) {
+    public LaporanAdapter(Context context) {
         this.context = context;
     }
 
@@ -33,13 +32,13 @@ public class SprintAdapter extends RecyclerView.Adapter<SprintAdapter.CategoryVi
 
     @NonNull
     @Override
-    public SprintAdapter.CategoryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public LaporanAdapter.CategoryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemRow = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_sprint, parent, false);
         return new CategoryViewHolder(itemRow);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull SprintAdapter.CategoryViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull LaporanAdapter.CategoryViewHolder holder, final int position) {
         holder.tvTitle.setText(getListSprint().get(position).getTitle());
 
 //        holder.itemView.setOnClickListener(new View.OnClickListener() {

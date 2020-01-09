@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".LaporanActivity">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +17,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:orientation="vertical">
-        
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="150dp">
@@ -33,15 +33,14 @@
                 android:src="@drawable/hiding1"
                 android:scaleType="fitXY"/>
         </RelativeLayout>
-
         <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Log Book Project"
+            android:text="Menu Utama"
             android:gravity="center"
             android:textSize="20dp"
             android:textColor="@color/Text"
@@ -51,69 +50,39 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"/>
 
-        <Spinner
-            android:id="@+id/spinner_sprint"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:entries="@array/Judul"
-            android:padding="10dp"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_task_checkbox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:listitem="@layout/item_taskcheckbox"/>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Komentar"
-            android:layout_margin="20dp"
-            app:boxStrokeColor="@color/Text"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-<!--        <EditText-->
-<!--            android:id="@+id/editText4"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="100dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:ems="10"-->
-<!--            android:inputType="textLongMessage"-->
-<!--            android:hint="Input Text"-->
-<!--            android:gravity="left"/>-->
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
         <Button
-            android:id="@+id/upload"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Choose File" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <Button
-            android:id="@+id/submit"
+            android:id="@+id/btn_activity_main_pindah"
             android:layout_gravity="center"
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Submit" />
+            android:text="Laporan Sprint" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/btn_po_review"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Review Laporan" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/btn_hasil_review"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hasil Review" />
 
     </LinearLayout>
-
 </LinearLayout>

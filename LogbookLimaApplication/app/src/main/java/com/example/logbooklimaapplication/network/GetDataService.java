@@ -2,7 +2,6 @@ package com.example.logbooklimaapplication.network;
 
 
 import com.example.logbooklimaapplication.model.Sprint;
-import com.example.logbooklimaapplication.model.SprintList;
 import com.example.logbooklimaapplication.model.Task;
 
 import java.util.ArrayList;
@@ -17,4 +16,8 @@ public interface GetDataService {
 
     @GET("get-task/{sprint_id}")
     Call<ArrayList<Task>> getTaskBySprintId(@Path("sprint_id") int sprintId);
+
+    @GET("logproject")
+    Call<ArrayList<Sprint>> getAllLogProject();
+
 }
